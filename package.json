@@ -13,5 +13,27 @@
     "co": "~3.0.2",
     "component-builder2": "~0.0.5",
     "component-resolver": "~0.0.7"
+  },
+  "description": "[myth](http://myth.io) plugin for [component-builder2](https://github.com/component/builder2.js).",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mnmly/builder-myth.git"
+  },
+  "keywords": [
+    "myth",
+    "builder2",
+    "component-builder2"
+  ],
+  "author": "Hiroaki Yamane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mnmly/builder-myth/issues"
   }
 }
