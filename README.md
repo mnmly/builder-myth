@@ -3,6 +3,12 @@
 [myth](http://myth.io) plugin for [component-builder2](https://github.com/component/builder2.js).
 
 
+### Installation
+
+```
+$ npm install mnmly/builder-myth
+```
+
 ### API
 
 - `myth(options)`
