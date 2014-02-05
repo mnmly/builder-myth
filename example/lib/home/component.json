@@ -1,0 +1,11 @@
+{
+  "name": "home",
+  "dependencies": {},
+  "scripts": [],
+  "styles":[
+    "home.css"
+  ],
+  "locals": [
+    "home-header"
+  ]
+}

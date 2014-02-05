@@ -1,0 +1,10 @@
+{
+  "name": "builder-myth-example",
+  "dependencies": {},
+  "scripts": [],
+  "styles":[],
+  "locals": [
+    "home"
+  ],
+  "paths": ["lib"]
+}

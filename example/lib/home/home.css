@@ -1,0 +1,6 @@
+:root
+  var-purple: #847AD1
+
+.home
+  background: var(purple)
+
