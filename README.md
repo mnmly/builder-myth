@@ -2,6 +2,16 @@
 
 [myth](http://myth.io) plugin for [component-builder2](https://github.com/component/builder2.js).
 
+
+### API
+
+- `myth(options)`
+
+Currently `options` can take only `whitespace` boolean.
+
+If `whitespace` is set to `true`, it will accept css with [significant whitespace](https://github.com/reworkcss/css-whitespace).
+
+
 ### Usage
 
 ```javascript
