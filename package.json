@@ -1,6 +1,6 @@
 {
   "name": "builder-myth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "css-whitespace": "~1.1.0",
     "co-fs": "~1.1.1",
