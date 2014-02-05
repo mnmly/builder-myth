@@ -1,8 +1,7 @@
 /**
  * Module dependencies
  */
-
-var fs = require('co-fs');
+var fs = require('fs');
 var myth = require('myth');
 var rework = require('rework');
 var debug = require('debug')('builder:myth');
@@ -21,25 +20,25 @@ exports = module.exports = function (options) {
 
   options = options || {};
 
-  return function* (file){
+  return function (file, done){
     
-    var css = yield fs.readFile(file.filename, 'utf8');
+    var css = fs.readFileSync(file.filename, 'utf8');
     var rwk;
     var res;
 
     if(options.whitespace) css = whitespace(css);
 
-
     try{
       debug('Compiling css on myth: %s', file.filename);
       res = rework(css).use(myth()).toString();
     } catch (err){
-      throw err;
+      done(err);
     }
 
     file.extention = 'css';
     file.string = res;
 
+    done();
   };
 
 };
