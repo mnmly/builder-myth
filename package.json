@@ -1,16 +1,15 @@
 {
   "name": "builder-myth",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {
     "css-whitespace": "~1.1.0",
-    "co-fs": "~1.1.1",
     "rework": "~0.20.2",
     "myth": "~0.3.0",
-    "mkdirp": "~0.3.5",
     "debug": "~0.7.4"
   },
   "devDependencies": {
     "co": "~3.0.2",
+    "mkdirp": "~0.3.5",
     "component-builder2": "~0.0.5",
     "component-resolver": "~0.0.7"
   },
