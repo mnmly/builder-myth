@@ -15,7 +15,8 @@ $ npm install mnmly/builder-myth
 
 Currently `options` can take only `whitespace` boolean.
 
-If `whitespace` is set to `true`, it will accept css with [significant whitespace](https://github.com/reworkcss/css-whitespace).
+It takes same option that can be passed to as `rework`'s `toString(opts)`.
+On top of it, you can also pass `whitespace`, if you want to use [significant whitespace](https://github.com/reworkcss/css-whitespace).
 
 
 ### Usage
@@ -46,7 +47,7 @@ co(function* build() {
     style.use('styles', myth());
 
     // Or with whitespace option
-    // style.use('styles', myth({whitespace: true}));
+    // style.use('styles', myth({whitespace: true, compress: true, sourcemap: true}));
 
     // write the builds to the following files in parallel
     yield [

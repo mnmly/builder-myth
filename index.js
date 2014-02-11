@@ -9,7 +9,8 @@ var whitespace = require('css-whitespace');
 
 /**
  * [myth](http://myth.io) plugin for builder2
- * Currently it will only take `whitespace` as option.
+ * It takes same option that can be passed to as `rework`'s `toString(opts)`
+ * On top of the options, you can also pass `whitespace`
  *
  * @param {Object} options 
  * @return {GeneratorFunction}
@@ -30,7 +31,7 @@ exports = module.exports = function (options) {
 
     try{
       debug('Compiling css on myth: %s', file.filename);
-      res = rework(css).use(myth()).toString();
+      res = rework(css).use(myth()).toString(options);
     } catch (err){
       done(err);
     }

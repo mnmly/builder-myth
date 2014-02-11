@@ -39,7 +39,7 @@ co(function* build() {
     // only include `.css` files from components' `.styles` field
     var style = new Builder.styles(nodes);
     style.use('styles', Builder.plugins.css());
-    style.use('styles', myth({whitespace: true}));
+    style.use('styles', myth({whitespace: true, sourcemap: true}));
 
     // write the builds to the following files in parallel
     yield [
