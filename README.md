@@ -7,6 +7,8 @@
 
 ```
 $ npm install mnmly/builder-myth
+# or 
+$ npm install builder-myth
 ```
 
 ### API
