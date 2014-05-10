@@ -1,17 +1,17 @@
 {
   "name": "builder-myth",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
     "css-whitespace": "~1.1.0",
     "rework": "~0.20.2",
-    "myth": "~0.3.0",
-    "debug": "~0.7.4"
+    "myth": "~1.0.2",
+    "debug": "*"
   },
   "devDependencies": {
     "co": "~3.0.2",
     "mkdirp": "~0.3.5",
-    "component-builder2": "~0.0.5",
-    "component-resolver": "~0.0.7"
+    "component-builder": "^1.1.5",
+    "component-resolver": "^1.1.1"
   },
   "description": "[myth](http://myth.io) plugin for [component-builder2](https://github.com/component/builder2.js).",
   "main": "index.js",
